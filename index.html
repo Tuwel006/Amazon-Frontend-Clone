@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Amazon</title>
+</head> 
+<body>
+    <div class="webpage">
+        <header>
+            <div class="navarea">
+                <div class="navbar">
+                    <div class="nav-left">
+                        <div class="nav-logo">
+                            <a href="#">
+                                <img class="border" src="amazon_logo.png">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <div class="nav-map border">
+                                <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                                <div class="nav-add">
+                                <div id="hello">Hello</div>
+                                <div id="add">Select your address</div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-search">
+                        <div class="search-bar">
+                            <div class="category">
+                                <select id="cata">
+                                    <option value="All">All</option>
+                                    <option value="Alexa Skills">Alexa Skills</option>
+                                    <option value="Amazon Device">Amazon Device</option>
+                                    <option value="Amazon Fasion">Amazon Fasion</option>
+                                    <option value="Amazon Fresh">Amazon Fresh</option>
+                                    <option value="Amazon Pharmacy">Amazon Pharmacy</option>
+                                    <option value="Appliances">Appliances</option>
+                                    <option value="Apps & Games">Apps & Games</option>
+                                    <option value="Baby">Baby</option>
+                                    <option value="Beauty">Beauty</option>
+                                    <option value="Books">Books</option>
+                                    <option value="Tools & Home Improvment">Tools & Home Improvment</option>
+                                </select>
+                            </div>
+                            <input id="search-box" type="text" placeholder="Search Amazon.in">
+                            <div class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="nav-right">
+                        <div class="lang border">
+                            <img id="usflag" src="usflag.jpg">
+                            <select id="lang-list">
+                                <option value="English">EN</option>
+                                <option>Bengali</option>
+                                <option>Hindi</option>
+                                <option>Russian</option>
+                                <option>Indian English</option>
+                            </select>
+                        </div>
+                        <div class="signup-list">
+                        <div class="signup-list1 border">                    
+                            <div class="signin">
+                                <a href="#">Hello, sign in</a>
+                            </div>
+                            <a id="account" href="#">Account & Lists <span>&#9661</span></a>              
+                        </div>
+                        
+                        <div class="list-item">
+                            <div class="list-top">
+                                <a href="#">
+                                    <button class="signin-btn">Sign in</button>
+                                </a>
+                                <br>
+                                <span class="reg-link" style="color: rgb(29, 28, 28);">New customer? <a style="color: rgb(67, 67, 231);" href="#">Start here.</a></span>
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-left">
+                                    <p>Your lists</p>
+                                    <div class="left-list-link">
+                                        <a href="#">Create a Wish List</a>
+                                        <a href="#">List from Any Website</a>
+                                        <a href="#">Baby Website</a>
+                                        <a href="#">List for Your website</a>
+                                        <a href="#">Explore Showroom</a>
+                                    </div>
+                                </div>
+                                <div class="list-right">
+                                    <p>Your Account</p>
+                                    <a href="#">Your Account</a>
+                                    <a href="#">Your Orders</a>
+                                    <a href="#">Your Wish List</a>
+                                    <a href="#">Your Recommendation</a>
+                                    <a href="#">Your Prime Membership</a>
+                                    <a href="#">Your Prime Video</a>
+                                    <a href="#">Your Subscribe & Save Items</a>
+                                    <a href="#">Membership & Subscription</a>
+                                    <a href="#">Your Seller Account</a>
+                                    <a href="#">Manage Your Content and Device</a>
+                                    <a href="#">Your Free Amazon Business Account</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <a href="#" class="return border">
+                        <p>Returns</p>
+                        <span>& Orders</span>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="cart border">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        <p>Cart</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="second-nav">
+                <div class="second-nav-left">
+                    <div onclick="run()" id="menu-bar" class="second-nav-left1 border">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                        <p>All</p>
+                    </div>
+                    <a href="#">Amazon miniTV</a>
+                    <a href="#">Sell</a>
+                    <a href="#">Best Sellers</a>
+                    <a hre="#">Today's Deal</a>
+                    <a href="#">Mobiles</a>
+                    <a href="#">New Releases</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">
+                        <span>Prime &#9661</span>
+                    </a>
+                    <a href="#">Electronics</a>
+                    <a href="#">Gift Ideas</a>
+                    <a href="#">Home & Kitchen</a>
+                </div>
+                <div class="second-nav-right border">
+                    <p>New Launches from Mobiles, Electronics & more | Shop now</p>
+                </div>
+            </div>       
+        </header>
+        <main>
+            <div class="hero-section">
+                <div class="hero-sec-img"></div>
+            </div>
+            
+            <div class="content-area">
+                <div class="first-content">
+                    <div class="content-box all sing">
+                        <p>
+                            Up to 70% off | Clearance Store
+                        </p>
+                        <div class="product one single"></div>
+                        <a href="#">See more</a>
+                    </div>
+                    <div class="content-box all">
+                        <p>
+                            Up to 70% off | Styles for Men
+                        </p>
+                        <div class="product tow grid">
+                            <div class="grid-box">
+                                <div class="pic p21"></div>
+                                <div class="caption">Clothing</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p22"></div>
+                                <div class="caption">Footware</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p23"></div>
+                                <div class="caption">Watches</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p24"></div>
+                                <div class="caption">Bags</div>
+                            </div>
+                        </div>
+                        <a href="#">See more</a>
+                    </div>
+                    <div class="content-box all">
+                        <p>Automotive essentials | Up to 60% off</p>
+                        <div class="product tow grid">
+                            <div class="grid-box">
+                                <div class="pic p31"></div>
+                                <div class="caption">Cleaning accessories</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p32"></div>
+                                <div class="caption">Tyre & rim care</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p33"></div>
+                                <div class="caption">Helmets</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p34"></div>
+                                <div class="caption">Vacuum Cleaner</div>
+                            </div>
+                        </div>
+                        <a href="#">See more</a>
+    
+                    </div>
+                    <div class="content-box">
+                        <div class="signup-option">
+                            <p>Sign in for your best experance</p>
+                            <button href="#" id="content-btn">Sign in securely</button>
+                        </div>
+                        <div class="ad1">
+                            <div class="adimg1"></div>
+                        </div>
+                    </div>
+                    <div class="content-box all">
+                        <p>Appliance for your home | Up to 55% off</p>
+                        <div class="product tow grid">
+                            <div class="grid-box">
+                                <div class="pic p51"></div>
+                                <div class="caption">Airconditioner</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p52"></div>
+                                <div class="caption">Refrigerators</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p53"></div>
+                                <div class="caption">Microwaves</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p54"></div>
+                                <div class="caption">Washing machinesr</div>
+                            </div>
+                        </div>
+                        <a href="#">See more</a>                    
+                    </div>
+    
+                    <div class="content-box all sing">
+                        <p>
+                            Up to 70% off | Toye Stores
+                        </p>
+                        <div class="product three single"></div>
+                        <a href="#">See more</a>
+                    </div>
+    
+                    <div class="content-box all">
+                        <p>Up to 70% off | Styles for Women</p>
+                        <div class="product tow grid">
+                            <div class="grid-box">
+                                <div class="pic p61"></div>
+                                <div class="caption">Women's clothing</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p62"></div>
+                                <div class="caption">Footware+Handbags</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p63"></div>
+                                <div class="caption">Watches</div>
+                            </div>
+                            <div class="grid-box">
+                                <div class="pic p64"></div>
+                                <div class="caption">Bags & luggage</div>
+                            </div>
+                        </div>
+                        <a href="#">See more</a>
+                    </div>
+    
+                    <div class="content-box all sing">
+                        <p>
+                            Up to 70% off | Clearance Store
+                        </p>
+                        <div class="product four single"></div>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                <div class="second-content">
+                    <div class="titel-area">
+                        <p>Today's Deals</p>
+                        <a href="#">See all deals</a>
+                    </div>
+                    <div class="element-area">
+                        <div class="second-content-box ast">
+                            <div class="photo s1"></div>
+                            <div class="offer s1">
+                                <div class="offer-value">14% off</div>
+                                <p>Deal of the day</p>
+                            </div>
+                            <div class="price s1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i><p>24,999.00</p><span>M.R.O.: <div id="stl"><i class="fa-solid fa-indian-rupee-sign"></i>28,999.00</div></span>
+                            </div>
+                            <div class="descroption">Best Offers on OPPO F25 5G</div>
+                        </div>
+                        <div class="second-content-box ast">
+                            <div class="photo s2"></div>
+                                <div class="offer s2">
+                                    <div class="offer-value">27% off</div>
+                                    <p>Deal of the day</p>
+                                </div>
+                                <div class="price s2">
+                                    <i class="fa-solid fa-indian-rupee-sign"></i><p>11,999.00</p><span>M.R.O.: <div id="stl"><i class="fa-solid fa-indian-rupee-sign"></i>16,349.00</div></span>
+                                </div>
+                                <div class="descroption">Lava Blaze 5G (6GB) available at Rs. 1...</div>
+                        </div>
+                        <div class="second-content-box ast">
+                            <div class="photo s3"></div>
+                                <div class="offer s3">
+                                    <div class="offer-value">Up to 47% off</div>
+                                <p>Deal of the day</p>
+                                </div>
+                                <div class="descroption">Bata, Hush Puppies & more</div>
+                        </div>
+                        <div class="second-content-box ast">
+                            <div class="photo s4"></div>
+                                <div class="offer s4">
+                                    <div class="offer-value">12% off</div>
+                                <p>Deal of the day</p>
+                                </div>
+                                <div class="price s4">
+                                    <i class="fa-solid fa-indian-rupee-sign"></i><p>14,999.00</p><span>M.R.O.: <div id="stl"><i class="fa-solid fa-indian-rupee-sign"></i>16,999.00</div></span>
+                                </div>
+                                <div class="descroption">Tecno Spark 10 5G, 8GB RAM 256GB...</div>
+                        </div>
+                        <div class="second-content-box ast">
+                                <div class="photo s5"></div>
+                                <div class="offer s5">
+                                    <div class="offer-value">Up to 95% off</div>
+                                <p>Deal of the day</p>
+                                </div>
+                                <div class="descroption">Best offers on PC & Electronic acces...</div>
+                        </div>
+                        <div class="second-content-box">
+                            <div class="photo s6"></div>
+                            <div class="offer s6">
+                                <div class="offer-value">Up to 84% off</div>
+                                <p>Deal of the da</p>
+                            </div>
+                            <div class="descroption">Wallpapers from wolpin</div>
+                        </div>              
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <a href="#" class="foot1">Back to Top</a>
+            <div class="footer2">
+                <div class="footer-list1">
+                    <p>Get to Know Us</p>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Releases</a>
+                    <a href="#">Amazon Science</a>
+                </div>
+                <div class="footer-list1">
+                    <p>Connect with Us</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Tweeter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="footer-list1">
+                    <p>Make Money with Us</p>
+                    <a href="#">Sell on Amazon</a>
+                    <a href="#">Sell under Amazon Accelerator</a>
+                    <a href="#">Protect and Build Your Brand</a>
+                    <a href="#">Amazon Global Selling</a>
+                    <a href="#">Become an Affilate</a>
+                    <a href="#">Fulfilment by Amazon</a>
+                    <a href="#">Fulfilment by Amazon</a>
+                    <a hre="#">Fulfilment by Amazon</a>
+                    <a href="#">Amazon Pay on Merchants</a>
+                </div>
+                <div class="footer-list1">
+                    <P>Let Us Help You</P>
+                    <a href="#">COVID-19 and Amazon</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Returns Centre</a>
+                    <a href="#">100% Purchase Protection</a>
+                    <a href="#">Amazon App Download</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="footer-logo"></div>
+                <div class="footer-lang">
+                    <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                    <p>English</p>
+                    <div class="up-down">
+                        <i class="fa-solid fa-sort-up" style="color: #6e7178;"></i>
+                        <i class="fa-solid fa-sort-down" style="color: #6e7178;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer4">
+                <a href="#">Australia
+                </a><a href="#">Brazil
+                </a><a href="#">Canada</a><a href="#">China</a><a href="#">France</a><a href="#">Germany</a><a href="#">Italy</a><a href="#">Japan</a>
+                <a href="#">Mexico</a><a href="#">Netherland</a><a href="#">Poland</a><a href="#">Singapure</a><a href="#">Spain</a><a href="#">Turkey</a><a href="#">United Arab Emirate</a><a href="#">United Kingdom</a>
+                <a hre="#">United States</a>
+            </div>
+            <div class="footer5">
+                <div class="footer-table">
+                    <div class="td1">
+                        <a href="#">AbeBooks<br><span>Books, art
+                            & collectibles</span></a>
+                        <a href="#">Amazon Web Services<br><span>Scalable Cloud
+                            Computing Services</span></a>
+                        <a href="#">Audible<br><span>Download
+                            Audio Books</span></a>
+                        <a href="#">DPReview<br><span>Digital
+                            Photography</span></a>
+                        <a hre="#">IMDb<br><span>Movies, TV
+                            & Celebrities</span></a>
+                    </div>
+                    <div class="td2">
+                        <a href="#">Shopbop<br><span>Designer
+                            Fashion Brands</span></a>
+                        <a href="#">Amazon Business<br><span>Everything For
+                            Your Business</span></a>
+                        <a href="#" id="tds1">Prime Now<br><span>2-Hour Delivery
+                            on Everyday Items</span></a>
+                        <a href="#" id="tds2">Amazon Prime Music<br><span>100 million songs, ad-free
+                            Over 15 million podcast episodes</span></a>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="footer6">
+                <div class="ft1">
+                    <a hre="#">Conditions of Use & Sale</a>
+                    <a hre="#">Privacy Notice</a>
+                    <a hre="#">Interest-Based Ads</a>
+                </div>
+                <div class="ft2">
+                    <span>&copy; 1996-2023, Amazon.com, Inc. or its affiliates</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay"></div>
+    <div id="menuArea" onclick="run()">
+
+        <div class="menu-signup">
+            <div class="profile"></div>
+            <span>Hello, sign in</span>
+        </div>
+        <div class="menu-items">
+            <div class="trending menuElm">
+                <p>Trending</p>
+                <button>Best Sellers</button>
+                <button>New Releases</button>
+                <button>Movers and Shakers</button>
+            </div>
+            <div class="menuElm">
+                <p>Digital Content And Devices</p>
+                <button>Echo & Alexa<span>></span></button>
+                <button>Fire TV<span>></span></button>
+                <button>Kindle E-Readers & eBooks<span>></span></button>
+                <button>Audible Audiobooks<span>></span></button>
+                <button>Amazon Prime Video<span>></span></button>
+                <button>Amazon Prime Music<span>></span></button>
+            </div>
+            <div class="menuElm">
+                <p>Shop By Catagory</p>
+                <button>Mobiles, Computers</button>
+                <button>TV, Appliances, Electronics</button>
+                <button>Men's Fashion</button>
+                <button>Women's Fasion</button>
+            </div>
+            <div class="menuElm">
+                <p>Programs & Features</p>
+                <button>Gift Cards & Mobile Recharges<span>></span></button>
+                <button>Amazon Launchpad</button>
+                <button>Flight Tickets</button>
+                <button>Clearance store</button>
+            </div>
+            <div class="menuElm">
+                <p>Help & Settings</p>
+                <button>Your Account</button>
+                <button>Customer Service</button>
+                <button>Sign in</button>
+            </div>
+        </div>
+
+    </div>
+    <iclass="fa-solid fa-xmark" style="color: #ffffff;"></i>
+    <span id="cross">X</span>
+    <script>
+        const cros=document.getElementById('cross');
+        const menuArea=document.getElementById("menuArea");
+        const webpage=document.querySelector('.webpage');
+        const overlay=document.getElementsByClassName('overlay');
+        function run(){                       
+            menuArea.style.left='0';
+            cros.style.display='block';
+            webpage.classList.add('menu-open');
+        }
+        cros.addEventListener("click",function run2(){
+                menuArea.style.left='-365px';
+                cros.style.display='none';
+                webpage.classList.remove('menu-open');
+            })
+        
+        function brightness(){
+            webpage.classList.add('bright');            
+            
+        }
+        function bright(){
+            webpag.classList.remove('bright');
+        }
+
+    </script>
+</body>
+</html>
