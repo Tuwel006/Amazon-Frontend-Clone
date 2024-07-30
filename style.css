@@ -10,6 +10,7 @@ body{
     margin: 0px;
     padding: 0px;
     height: 100vh;
+    position: absolute;
 }
 a{
     color: white;
@@ -18,17 +19,20 @@ a{
     height: max-content;
     width: max-content;
     position: sticky;
+position: absolute;
 } */
 .navbar{
     height: 60px;
     background-color: #131921;
     color: white;
     display: flex;
-    position: unset;
+    position: absolute;
     top: -60px;
+    
 }
 .nav-left{
     display: flex;
+    position: absolute;
 }
 .nav-logo{
     width: 130px;
@@ -131,6 +135,7 @@ i{
 }
 .nav-right{
     display: flex;
+    position: absolute;
 }
 .lang{
     height: 45px;
