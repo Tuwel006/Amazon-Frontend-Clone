@@ -12,6 +12,12 @@ body{
     height: 100vh;
     position: absolute;
 }
+.webpage{
+    position: absolute;
+}
+header{
+    positios: absolute;
+}
 a{
     color: white;
 }
