@@ -32,13 +32,12 @@ position: absolute;
     background-color: #131921;
     color: white;
     display: flex;
-    position: absolute;
-    top: -60px;
-    
+    position: fixed;
+    top: 0;
+    z-index: 10000000;
 }
 .nav-left{
     display: flex;
-    position: absolute;
 }
 .nav-logo{
     width: 130px;
@@ -141,7 +140,6 @@ i{
 }
 .nav-right{
     display: flex;
-    position: absolute;
 }
 .lang{
     height: 45px;
@@ -317,6 +315,7 @@ i{
     justify-content: space-between;
     color: white;
     font-size: 0.94rem;
+    margin-top: 60px;
 }
 .second-nav-right{
     width: max-content;
